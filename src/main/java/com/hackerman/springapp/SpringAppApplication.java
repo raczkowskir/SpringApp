@@ -10,4 +10,5 @@ public class SpringAppApplication {
         SpringApplication.run(SpringAppApplication.class, args);
     }
 //test komentarza
+//test komentarza Jaro
 }
