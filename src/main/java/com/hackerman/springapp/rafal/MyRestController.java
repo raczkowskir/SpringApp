@@ -1,5 +1,7 @@
 package com.hackerman.springapp.rafal;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,8 +17,17 @@ public class MyRestController {
     }
 
     @PostMapping(path = "/myPostMethod", produces = MediaType.APPLICATION_JSON_VALUE)
-    public void addMember(@RequestBody String sth) {
-        System.out.println("Here we are:");
-        System.out.println(sth);
+    public String addMember(@RequestBody String requBody) {
+        System.out.println("This is my name:");
+        System.out.println(requBody);
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            JsonNode jsonNode = mapper.readTree(requBody);
+        }
+        catch (Exception e) {
+            System.out.println("We have un exception");
+        }
+
+        return "My name is:";
     }
 }
