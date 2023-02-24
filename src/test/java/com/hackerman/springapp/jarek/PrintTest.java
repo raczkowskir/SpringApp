@@ -35,6 +35,20 @@ class PrintTest {
         assertEquals(expectedName,result);
     }
     @Test
+    public void printNameWithK(){
+
+        //given
+        char initialLetter = 'k';
+        String expectedName = "kuba";
+        Print print = new Print();
+
+        //when
+        String result = print.printName(initialLetter);
+
+        //then
+        assertEquals(expectedName,result);
+    }
+    @Test
     void printNameShouldReturnIllegalStateException() {
         // given
         Print print = new Print();
