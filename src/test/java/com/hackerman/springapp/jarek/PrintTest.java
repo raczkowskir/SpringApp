@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PrintTest {
 
     @Test
-    void printName(){
+    void printNameWithR(){
 
         //given
         char initialLetter = 'r';
@@ -17,6 +17,20 @@ class PrintTest {
         //when
         String result = print.printName(initialLetter);
         
+        //then
+        assertEquals(expectedName,result);
+    }
+    @Test
+    public void printNameWithJ(){
+
+        //given
+        char initialLetter = 'j';
+        String expectedName = "jarek";
+        Print print = new Print();
+
+        //when
+        String result = print.printName(initialLetter);
+
         //then
         assertEquals(expectedName,result);
     }
