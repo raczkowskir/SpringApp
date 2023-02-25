@@ -1,5 +1,7 @@
 package com.hackerman.springapp;
 
+import com.hackerman.springapp.jarek.Human2;
+import com.hackerman.springapp.jarek.Jarek;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
