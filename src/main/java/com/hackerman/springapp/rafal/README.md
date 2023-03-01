@@ -1,3 +1,4 @@
 # this is Rafal's package
 
-Rafal's confirmation: works.
+Here is a place for play.
+
