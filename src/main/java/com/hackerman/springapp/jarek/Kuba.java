@@ -5,4 +5,9 @@ public class Kuba implements Human2{
     public int getAge() {
         return 38;
     }
+
+    @Override
+    public String getName() {
+        return null;
+    }
 }
